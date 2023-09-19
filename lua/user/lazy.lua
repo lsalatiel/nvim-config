@@ -13,12 +13,14 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-    {
-        priority = 1000,
-        "rebelot/kanagawa.nvim",
-        config = function()
-            vim.cmd("colorscheme kanagawa")
-            require("user.plugins.colorscheme")
-        end,
+    {import = "user.plugins"}
+},
+{
+    checker = {
+        enabled = true,
+        notify = false,
+    },
+    change_detection = {
+        notify = false,
     },
 })
