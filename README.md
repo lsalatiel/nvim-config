@@ -57,6 +57,9 @@
 
 - [harpoon](https://github.com/ThePrimeagen/harpoon)
 
+### Git
+- [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+
 ### Statusline
 
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
