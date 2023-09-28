@@ -82,6 +82,6 @@
 
 2. Cloning this config
 ```sh
-   git clone git@github.com:lsalatiel/nvim-config.git ~/.config/nvim
+   git clone https://github.com/lsalatiel/nvim-config.git ~/.config/nvim
 ```
 
