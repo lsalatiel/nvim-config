@@ -76,12 +76,12 @@
 
 1. Moving your current configuration to nvim.bak
 ```sh
-   mv ~/.config/nvim ~/.config/nvim.bak
-   mv ~/.local/share/nvim ~/.local/share/nvim.bak
+mv ~/.config/nvim ~/.config/nvim.bak
+mv ~/.local/share/nvim ~/.local/share/nvim.bak
 ```
 
 2. Cloning this config
 ```sh
-   git clone https://github.com/lsalatiel/nvim-config.git ~/.config/nvim
+git clone https://github.com/lsalatiel/nvim-config.git ~/.config/nvim
 ```
 
