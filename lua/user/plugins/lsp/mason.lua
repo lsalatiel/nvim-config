@@ -20,7 +20,6 @@ return {
             -- list of servers for mason to install
             ensure_installed = {
                 "clangd",
-                "jdtls",
                 "pyright",
                 "lua_ls"
             },
