@@ -1,5 +1,4 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -25,3 +24,10 @@ vim.keymap.set("i", "<C-j>", "<Down>")
 vim.keymap.set("i", "<C-k>", "<Up>")
 vim.keymap.set("i", "<C-l>", "<Right>")
 
+vim.keymap.set("n", "dw", "dt_")
+vim.keymap.set("n", "dw", "daw")
+
+vim.keymap.set("n", "ss", ":split<Return>")
+vim.keymap.set("n", "sv", ":vsplit<Return>")
+
+vim.keymap.set("n", "<leader>L", ":Lazy<Return>")
