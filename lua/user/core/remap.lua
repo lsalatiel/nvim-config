@@ -31,3 +31,5 @@ vim.keymap.set("n", "ss", ":split<Return>")
 vim.keymap.set("n", "sv", ":vsplit<Return>")
 
 vim.keymap.set("n", "<leader>L", ":Lazy<Return>")
+
+vim.keymap.set("n", "<C-a>", "ggVG")
