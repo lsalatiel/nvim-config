@@ -24,8 +24,8 @@ vim.keymap.set("i", "<C-j>", "<Down>")
 vim.keymap.set("i", "<C-k>", "<Up>")
 vim.keymap.set("i", "<C-l>", "<Right>")
 
-vim.keymap.set("n", "dw", "dt_")
-vim.keymap.set("n", "dw", "daw")
+vim.keymap.set("n", "dn", "dt_")
+vim.keymap.set("n", "cn", "ct_")
 
 vim.keymap.set("n", "ss", ":split<Return>")
 vim.keymap.set("n", "sv", ":vsplit<Return>")
