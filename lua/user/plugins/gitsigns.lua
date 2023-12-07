@@ -42,5 +42,6 @@ return {
                 enable = false
             },
         }
+        vim.keymap.set("n", "gb", "<CMD>Gitsigns blame_line<CR>", { desc = "Git blame" })
     end
 }
