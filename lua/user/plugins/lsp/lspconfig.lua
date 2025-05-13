@@ -80,6 +80,55 @@ return {
             },
         })
 
+        lspconfig["elixirls"].setup({
+            cmd = { "elixir-ls" },
+            capabilities = capabilities,
+            on_attach = on_attach,
+            settings = {
+                elixirLS = {
+                    dialyzerEnabled = false,
+                    fetchDeps = false,
+                },
+            }
+        })
+
+        lspconfig["ts_ls"].setup({
+            capabilities = capabilities,
+            on_attach = on_attach,
+        })
+
+        lspconfig["html"].setup({
+            capabilities = capabilities,
+            on_attach = on_attach,
+        })
+
+        lspconfig["cssls"].setup({
+            capabilities = capabilities,
+            on_attach = on_attach,
+        })
+
+        lspconfig["emmet_ls"].setup({
+            capabilities = capabilities,
+            on_attach = on_attach,
+            filetypes = { "html", "css", "scss", "javascript", "javascriptreact", "typescript", "typescriptreact" },
+        })
+
+        lspconfig["omnisharp"].setup({
+            capabilities = capabilities,
+            on_attach = on_attach,
+            cmd = { "omnisharp" },
+            -- Enable this to use dotnet 6 or greater
+            enable_roslyn_analyzers = true,
+            organize_imports_on_format = true,
+            enable_import_completion = true,
+            sdk_include_prereleases = true,
+            -- Set the path to your dotnet executable
+            -- Sometimes needed if it's not in your PATH
+            cmd_env = {
+                DOTNET_ROOT = "/usr/share/dotnet"
+            }
+        })
+
         -- configure python server
         lspconfig["pyright"].setup({
             capabilities = capabilities,

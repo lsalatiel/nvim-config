@@ -9,12 +9,18 @@ return {
                 "c",
                 "java",
                 "javascript",
+                "typescript",
+                "css",
+                "html",
                 "cpp",
                 "gitignore",
                 "lua",
                 "vim",
                 "vimdoc",
-                "query"
+                "query",
+                "elixir",
+                "eex",
+                "c_sharp"
             },
 
             -- Install parsers synchronously (only applied to `ensure_installed`)

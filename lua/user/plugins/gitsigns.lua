@@ -38,10 +38,9 @@ return {
                 row = 0,
                 col = 1
             },
-            yadm = {
-                enable = false
-            },
         }
         vim.keymap.set("n", "gb", "<CMD>Gitsigns blame_line<CR>", { desc = "Git blame" })
+        vim.keymap.set("n", "gp", "<CMD>Gitsigns preview_hunk<CR>", { desc = "Git preview hunk" })
+        vim.keymap.set("n", "<leader>gr", "<CMD>Gitsigns reset_hunk<CR>", { desc = "Git reset hunk" })
     end
 }
