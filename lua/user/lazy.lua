@@ -11,6 +11,8 @@ if not vim.loop.fs_stat(lazypath) then
 end
 
 vim.opt.rtp:prepend(lazypath)
+-- supress deprecation warnings from plugins
+vim.deprecate = function() end
 
 require("lazy").setup({
     {import = "user.plugins"},

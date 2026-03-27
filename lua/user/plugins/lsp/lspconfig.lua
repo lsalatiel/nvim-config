@@ -80,17 +80,17 @@ return {
             },
         })
 
-        lspconfig["elixirls"].setup({
-            cmd = { "elixir-ls" },
-            capabilities = capabilities,
-            on_attach = on_attach,
-            settings = {
-                elixirLS = {
-                    dialyzerEnabled = false,
-                    fetchDeps = false,
-                },
-            }
-        })
+        -- lspconfig["elixirls"].setup({
+        --     cmd = { "elixir-ls" },
+        --     capabilities = capabilities,
+        --     on_attach = on_attach,
+        --     settings = {
+        --         elixirLS = {
+        --             dialyzerEnabled = false,
+        --             fetchDeps = false,
+        --         },
+        --     }
+        -- })
 
         lspconfig["ts_ls"].setup({
             capabilities = capabilities,

@@ -25,7 +25,6 @@ return {
                 "ts_ls",
                 "html",
                 "cssls",
-                "elixirls",
                 "emmet_ls"
             },
             -- auto-install configured servers (with lspconfig)
